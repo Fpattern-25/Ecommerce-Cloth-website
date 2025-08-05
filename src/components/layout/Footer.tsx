@@ -28,9 +28,9 @@ const footerSections = [
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 text-gray-700">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-gray-50 text-gray-700 w-full">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 min-h-[300px]">
           {/* Contact Us Section */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-gray-900">Contact Us</h3>
@@ -144,13 +144,15 @@ export function Footer() {
           </div>
 
           {/* Newsletter Section */}
-          <div>
+          <div className="h-full flex flex-col">
             <h3 className="text-lg font-semibold mb-6 text-gray-900">Newsletter</h3>
-            <div className="space-y-4">
-              <p className="text-sm text-gray-600">
+            <div className="space-y-4 flex-1 flex flex-col justify-between">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 Get E-mail updates about our latest shop and special offers.
               </p>
-              <Newsletter />
+              <div className="mt-auto">
+                <Newsletter />
+              </div>
             </div>
           </div>
         </div>
