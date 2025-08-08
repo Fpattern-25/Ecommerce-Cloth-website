@@ -2,8 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/0130bff0-cb19-476f-ba0d-909ba8647c50
-
+**URL**: (https://fpattern-25.github.io/Ecommerce-Cloth-website/)
 ## What technologies are used for this project?
 
 This project is built with:
